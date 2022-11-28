@@ -31,7 +31,7 @@ public class ServiceCoursClassroomImpl implements IServiceCoursClassroom{
     }
 
     @Override
-    public List<CoursClassroom> retrieveCoursClassroom(int id) {
+    public List<CoursClassroom> retrieveCoursClassroom() {
         return coursClassroomRepository.findAll();
     }
 

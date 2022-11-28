@@ -24,7 +24,11 @@ public class ServiceClasseImpl implements IServiceClasse{
 
     @Override
     public Classe modifierClasse(Classe c) {
-        return classeRepository.save(c);
+        Classe c2=classeRepository.findById(c.getCodeClasse()).orElse(null);
+        c2.setTitle(c.getTitle());
+        c2.setNiveau(c.getNiveau());
+
+        return classeRepository.save(c2);
     }
 
     @Override

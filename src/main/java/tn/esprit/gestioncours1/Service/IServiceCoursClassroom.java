@@ -8,7 +8,7 @@ public interface IServiceCoursClassroom {
 
     CoursClassroom ajouterCoursClassroom(CoursClassroom cc);
     CoursClassroom modifierCoursClassroom(CoursClassroom cc);
-    List<CoursClassroom> retrieveCoursClassroom(int id);
+    List<CoursClassroom> retrieveCoursClassroom();
     CoursClassroom retiriveCour(int id);
     void deleteCoursClassroom(int id);
 
